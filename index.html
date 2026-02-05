@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon.svg"
+      type="image/svg+xml"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-bs-theme="light" id="body">
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" aria-current="page">Home</a>
+        </li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul>
+      <div
+        class="btn-group px-4 js-btn-change-theme"
+        role="group"
+        aria-label="Basic radio toggle button group"
+      >
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio1"
+          autocomplete="off"
+          checked
+        />
+        <label class="btn btn-outline-primary" for="btnradio1">Light☀️</label>
+
+        <input
+          type="radio"
+          class="btn-check"
+          name="btnradio"
+          id="btnradio2"
+          autocomplete="off"
+        />
+        <label class="btn btn-outline-primary" for="btnradio2">Dark🌚</label>
+      </div>
+    </header>
+    <main>
+      <section class="notes-form">
+        <div class="container">
+          <form class="js-form">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Note title</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter note title"
+                name="name"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Note description</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="5"
+                placeholder="Type your text note"
+                name="body"
+              ></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Add note</button>
+          </form>
+        </div>
+      </section>
+      <section class="notes py-5">
+        <div class="container">
+          <h2 class="display-6 mb-3 text-center">Notes📝</h2>
+          <ul class="notes-list js-notes-list">
+            <!-- <li class="card js-card">
+              <h5 class="card-header">${name}</h5>
+              <div class="card-body">
+                <p class="card-text">${body}</p>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Check me out</label
+                  >
+                </div>
+                <button
+                  class="btn btn-primary js-delete-btn"
+                  type="button"
+                  data-noteid="${id}"
+                >
+                  Delete
+                </button>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/generate-id@2.0.1/index.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      async
+    ></script>
+    <script src="./app/app.js"></script>
+  </body>
+</html>
